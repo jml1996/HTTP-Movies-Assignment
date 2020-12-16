@@ -31,10 +31,15 @@ const App = () => {
 
   return (
     <>
+      <ul id="nav">
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/add-movie">Add Movie</Link>
+        </li>
+      </ul>
       <SavedList list={savedList} />
-      <div>
-        <Link to="/add-movie">Add Movie</Link>
-      </div>
 
       <Route exact path="/">
         <MovieList movies={movieList} />
